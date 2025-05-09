@@ -11,6 +11,7 @@ Brief summary of what the DApp does and who it’s for. Especially the problem i
 ## Project Structure
 - `contracts/`: Smart contracts (written in Solidity via Remix)
 - `frontend/`: DApp code (React, Next.js, or React Native)
+- `backend/`: Nodejs + Express
 - `assets/`: Screenshots, mockups, etc.
 - `videos/`: Demo screen recordings
 - `deployment/`: Script files and deployed addresses
@@ -24,8 +25,10 @@ Brief summary of what the DApp does and who it’s for. Especially the problem i
 
 ## How to Run Locally
 1. Clone the repo  
-2. `cd frontend && npm install`  
-3. `npm run dev`
+2.  `cd backend`
+3.  `node .\index.js`
+4. `cd frontend && npm install`
+5. `npm run dev` 
 
 ## Contracts
 | Contract | Address | Network |
@@ -39,8 +42,9 @@ Brief summary of what the DApp does and who it’s for. Especially the problem i
 [Watch here](./videos/demo.mp4)
 
 ## Authors
-- Jane Doe (Frontend)
-- John Smith (Solidity)
+- Samuel Okyere Nyarko (Frontend)
+- Samuel Okyere Nyarko (Backend)
+- Samuel Okyere Nyarko (Solidity)
 
 ## 📄 License
 MIT or GPL-3.0
