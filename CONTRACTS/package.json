@@ -1,0 +1,54 @@
+{
+  "name": "assetbit-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for the AssetBit platform on Kernel (KRNL)",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "deploy:kyc": "hardhat run scripts/deploy-kyc-verification.js",
+    "deploy:kyc:sepolia": "hardhat run scripts/deploy-kyc-verification.js --network sepolia",
+    "upgrade:kyc": "hardhat run scripts/upgrade-kyc-verification.js",
+    "upgrade:kyc:sepolia": "hardhat run scripts/upgrade-kyc-verification.js --network sepolia",
+    "lint": "solhint 'contracts/**/*.sol'"
+  },
+  "keywords": [
+    "blockchain",
+    "hardhat",
+    "ethereum",
+    "solidity",
+    "kernel",
+    "krnl",
+    "kyc"
+  ],
+  "author": "AssetBit Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.5.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.7.1",
+    "hardhat": "^2.17.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solhint": "^3.6.0",
+    "solidity-coverage": "^0.8.4",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.0.0"
+  }
+} 
